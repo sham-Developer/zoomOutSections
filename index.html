@@ -1,23 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Scroll Zoom Effect</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <div class="main-container">
-    <div class="sections-outer-container">
-      <div class="sec sec-0"></div>
-      <div class="sec sec-1"></div>
-      <div class="sec sec-2"></div>
-      <div class="sec sec-3"></div>
+    <div class="sections-wrapper">
+      <div class="row top-row">
+        <div class="sec sec-top-0 gray"></div>
+        <div class="sec sec-top-1 gray"></div>
+        <div class="sec sec-top-2 gray"></div>
+        <div class="sec sec-top-3 gray"></div>
+        <div class="sec sec-top-4 gray"></div>
+        <!-- <div class="sec sec-top-5 gray"></div> -->
+      </div>
+
+      <div class="row middle-row">
+        <div class="sec sec-0 gray"></div>
+        <div class="sec sec-1 ">
+          <div class="presentation-container">
+            <div class="floating-particles" id="particles"></div>
+
+            <div class="content-wrapper">
+              <div class="left-section">
+                <h1 class="main-title">PRESSURE</h1>
+                <p class="subtitle">RELIEF VALVE</p>
+              </div>
+
+              <div class="right-section">
+                <div class="brand-logo">RAP</div>
+
+                <div class="valve-container">
+                  <div class="valve-item">
+                    <div class="valve-visual" onclick="animateValve(this)"></div>
+                    <h2 class="valve-title">VACUUM</h2>
+                    <p class="valve-subtitle">RELIEF VALVE</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="scroll-indicator">
+              <div class="scroll-icon"></div>
+              <span>SCROLL TO EXPLORE</span>
+            </div>
+          </div>
+
+        </div>
+        <div class="sec sec-2 gray"></div>
+        <div class="sec sec-3 "></div>
+        <div class="sec sec-4 gray"></div>
+        <!-- <div class="sec sec-5"></div> -->
+      </div>
+
+      <div class="row bottom-row">
+        <div class="sec sec-bottom-0 gray"></div>
+        <div class="sec sec-bottom-1 gray"></div>
+        <div class="sec sec-bottom-2 gray"></div>
+        <div class="sec sec-bottom-3 gray"></div>
+        <div class="sec sec-bottom-4 gray"></div>
+        <!-- <div class="sec sec-bottom-5 gray"></div> -->
+      </div>
     </div>
   </div>
+
+  <div class="next-section">
+    <h1>This is the next section</h1>
+    <p>Keep scrolling normally...</p>
+  </div>
+  <div class="next-section">
+    <h1>This is the next next section</h1>
+    <p>Keep scrolling normally...</p>
+  </div>
+
+
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script src="script.js"></script>
 </body>
+
 </html>
